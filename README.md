@@ -19,46 +19,46 @@ Stateful Widget:
 Jadi, Stateless Widget digunakan untuk tampilan yang tetap dan tidak berubah, sementara Stateful Widget digunakan untuk tampilan yang dapat berubah atau merespons perubahan data dan interaksi pengguna. Dalam pengembangan aplikasi Flutter, kombinasi dari Stateless dan Stateful Widget sering digunakan bersama untuk menciptakan antarmuka pengguna yang dinamis dan responsif.  
 
 2. Sebutkan seluruh widget yang kamu gunakan untuk menyelesaikan tugas ini dan jelaskan fungsinya masing-masing.
-1. **MyApp (Stateless Widget)**:
+- **MyApp (Stateless Widget)**:
    - `MyApp` adalah root widget
    - widget utama yang akan dijalankan saat aplikasi dimulai
    - menggunakan `MaterialApp` sebagai tampilan utama dan menentukan tema aplikasi
 
-2. **MaterialApp (Widget)**:
+- **MaterialApp (Widget)**:
    - `MaterialApp` adalah widget yang digunakan untuk mengatur konfigurasi tingkat atas untuk aplikasi Flutter
    - menentukan judul aplikasi, tema, dan halaman beranda
 
-3. **MyHomePage (Stateless Widget)**:
+- **MyHomePage (Stateless Widget)**:
    - `MyHomePage` adalah widget yang menampilkan halaman utama aplikasi
    - tampilan yang menampilkan daftar item toko dan menggunakan `GridView` untuk tata letaknya
 
-4. **Scaffold (Widget)**:
+- **Scaffold (Widget)**:
    - `Scaffold` adalah widget yang menyediakan kerangka kerja dasar untuk halaman aplikasi
    - memiliki `AppBar` di bagian atas dan `body` di bagian tengah
 
-5. **AppBar (Widget)**:
+- **AppBar (Widget)**:
    - `AppBar` adalah bagian atas halaman yang menampilkan judul aplikasi
    - dapat berisi tombol atau widget lainnya
 
-6. **SingleChildScrollView (Widget)**:
+- **SingleChildScrollView (Widget)**:
    - `SingleChildScrollView` adalah widget yang membungkus konten halaman dan memungkinkan kontennya untuk discroll jika terlalu panjang
 
-7. **Padding (Widget)**:
+- **Padding (Widget)**:
    - `Padding` digunakan untuk memberikan jarak antara konten dan tepi halaman
 
-8. **Text (Widget)**:
+- **Text (Widget)**:
    - `Text` digunakan untuk menampilkan teks di atas halaman
    - menampilkan teks "Item Shop" yang merupakan judul toko
 
-9. **GridView (Widget)**:
+- **GridView (Widget)**:
    - `GridView` digunakan untuk membuat tampilan grid dari item toko
    - menampilkan daftar item toko dalam tata letak grid 3 kolom.
 
-10. **ShopItem (Class)**:
+- **ShopItem (Class)**:
     - `ShopItem` adalah kelas yang digunakan untuk merepresentasikan item toko
     - Ini memiliki properti `name`, `icon`, dan `color` untuk menentukan nama item, ikon, dan warna tombol
 
-11. **ShopCard (Stateless Widget)**:
+- **ShopCard (Stateless Widget)**:
     - `ShopCard` adalah widget yang digunakan untuk menampilkan setiap item toko sebagai kartu yang dapat diklik
     - Ini mengambil `ShopItem` sebagai argumen konstruktor dan menampilkan ikon dan teks sesuai dengan item toko tersebut
 
