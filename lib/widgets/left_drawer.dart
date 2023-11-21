@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tugas_7/screens/menu.dart';
 import 'package:tugas_7/screens/shoplist_form.dart';
-import 'package:tugas_7/screens/item_list.dart'; // Import the new screen
-import 'package:tugas_7/screens/product_model.dart'; // Import the product model
+import 'package:tugas_7/screens/list_item.dart'; // Import the new screen
 
 
 class LeftDrawer extends StatelessWidget {
@@ -67,16 +66,15 @@ class LeftDrawer extends StatelessWidget {
           ),
           // TODO: New page routing
           ListTile(
-            leading: const Icon(Icons.checklist),
-            title: const Text('Lihat Item'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ItemListPage(products: productList),
-                ),
-              );
-            },
+              leading: const Icon(Icons.shopping_basket),
+              title: const Text('Daftar Item'),
+              onTap: () {
+                  // Route menu ke halaman produk
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProductPage()),
+                  );
+              },
           ),
         ],
       ),

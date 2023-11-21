@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:tugas_7/widgets/left_drawer.dart';
 import 'package:tugas_7/widgets/shop_card.dart';
+import 'package:tugas_7/models/item.dart'; // Import the product model
+import 'package:tugas_7/screens/list_item.dart'; // Import the new screen
+
+
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({Key? key}) : super(key: key);
